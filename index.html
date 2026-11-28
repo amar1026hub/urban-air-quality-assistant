@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2338bdf8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AeroPulse — Urban Air Quality & Health Assistant</title>
+    <meta name="description" content="Real-time urban air quality monitoring, pollutant breakdown, 7-day hourly forecasts, and AI-powered environmental health advisory." />
+
+    <!-- Security Headers -->
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://tile.openstreetmap.org https://server.arcgisonline.com; connect-src 'self' https://air-quality-api.open-meteo.com https://geocoding-api.open-meteo.com https://api.open-meteo.com https://generativelanguage.googleapis.com; font-src 'self' data:; object-src 'none'; form-action 'self'; base-uri 'self';"
+    />
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
